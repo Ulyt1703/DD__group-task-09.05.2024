@@ -93,6 +93,10 @@ let userColor = chuVaki.map(chel => chel.eyeColor)
 
 console.log(userColor)
 
-let userGender = chuVaki.filter(chuvak => chuvak.gender === 'male')
+let userGender = chuVaki.filter(chuvak => chuvak.gender === 'male').map(chuvak => chuvak.name)
 
 console.log(userGender)
+
+let userInactive = chuVaki.filter(chelik => chelik.isActive === false).map(chelik => chelik.name)
+
+console.log(userInactive)
