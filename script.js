@@ -88,3 +88,7 @@ let chuVaki = [
 let userNames = chuVaki.map(player => player.name)
 
 console.log(userNames)
+
+let userColor = chuVaki.map(chel => chel.eyeColor)
+
+console.log(userColor)
