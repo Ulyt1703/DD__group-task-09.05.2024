@@ -100,3 +100,8 @@ console.log(userGender)
 let userInactive = chuVaki.filter(chelik => chelik.isActive === false).map(chelik => chelik.name)
 
 console.log(userInactive)
+
+
+let userEmail = chuVaki.filter(bro => bro.email === 'elmahead@omatom.com')
+
+console.log(userEmail)
