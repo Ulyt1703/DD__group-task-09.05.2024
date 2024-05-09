@@ -105,3 +105,27 @@ console.log(userInactive)
 let userEmail = chuVaki.filter(bro => bro.email === 'elmahead@omatom.com')
 
 console.log(userEmail)
+
+
+function getUsersInAgeRange(min, max) {
+    return chuVaki.filter(user => user.age >= min && user.age <= max)
+}
+let minAge = 25
+let maxAge = 35
+let usersInRange = getUsersInAgeRange(minAge, maxAge)
+console.log(usersInRange)
+
+
+function getUsersBalanceTotal() {
+    let totalBalance = 0
+
+    chuVaki.forEach(user => {
+        totalBalance += user.balance
+    })
+
+    return totalBalance
+}
+
+let usersBalanceTotal = getUsersBalanceTotal()
+
+console.log(usersBalanceTotal)
