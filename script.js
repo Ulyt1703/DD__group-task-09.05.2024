@@ -129,3 +129,8 @@ function getUsersBalanceTotal() {
 let usersBalanceTotal = getUsersBalanceTotal()
 
 console.log(usersBalanceTotal)
+
+
+let usersFriends = chuVaki.filter(peop => peop.friends.includes('Briana Decker'))
+
+console.log(usersFriends)
